@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import TodoForm from './TodoForm';
-import { RiDeleteBin5Fill } from 'react-icons/ri';
+import { RiDeleteBin5Line } from 'react-icons/ri';
 import { FaEdit} from 'react-icons/fa';
 
 const Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {
@@ -29,7 +29,7 @@ const Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {
                 {todo.text}
             </div>
             <div className='icons'>
-                <RiDeleteBin5Fill onClick ={()=> removeTodo(todo.id)} className="remove-icon" />
+                <RiDeleteBin5Line onClick ={()=> removeTodo(todo.id)} className="remove-icon" />
                 <FaEdit onClick={()=> setEdit({id: todo.id, value: todo.text})} className="edit-icon" />
             </div>
         </div>

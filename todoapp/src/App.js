@@ -4,10 +4,12 @@ import './App.css';
 
 function App() {
   return (
-    <div className="todo-app">
+    <div className="container">
+     <div className="col-6 todo-app">
       
       <TodoList/>
       
+     </div>
     </div>
   );
 }
